@@ -1,0 +1,32 @@
+{
+  "name": "fimail",
+  "version": "1.0.0",
+  "description": "Layanan pengirim pesan elektronik (email) dengan API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "keywords": [
+    "fimail",
+    "email",
+    "gmail",
+    "sendmail"
+  ],
+  "author": {
+    "name": "Feri Irawan",
+    "email": "feriirawan.akun@gmail.com",
+    "url": "https://feri-irawan.netlify.app"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/feri-irawan/fimail",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feri-irawan/fimail.git"
+  },
+  "bugs": "https://github.com/feri-irawan/fimail/issues",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.25.3",
+    "nodemailer": "^6.7.2"
+  }
+}
