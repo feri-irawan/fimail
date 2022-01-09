@@ -1,6 +1,7 @@
 # 📧 Fimail
 
 ![Visitor](https://fibadge.vercel.app/badges/visitors/feri-irawan/fimail)
+![GitHub deployments](https://img.shields.io/github/deployments/feri-irawan/fimail/production?label=vercel&logo=vercel&style=for-the-badge)
 
 Fimail, layanan pengirim pesan elektronik dengan API. Dibuat dengan ❤ dan NodeJs oleh [Feri Irawan](https://github.com/feri-irawan) pada 31/12/2021 06.27
 
@@ -9,7 +10,7 @@ Fimail, layanan pengirim pesan elektronik dengan API. Dibuat dengan ❤ dan Node
 Berikut ini contoh sederhana permintaan API untuk memulai cepat.
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -32,7 +33,7 @@ Jika kamu ingin mengirim ke beberapa pengguna, kamu bisa menuliskan email penggu
 **Contoh:**
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -77,7 +78,7 @@ Informasi pengirim dan penerima (`to`, `cc`, `bc`, dan `bcc`) juga boleh ditulis
 Secara default pesan yang dikirim sudah dalam format HTML, jadi kamu ingin mengirim konten berupa kode HTML, maka kamu bisa langsung menuliskannya seperti berikut.
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -104,7 +105,7 @@ Kamu bisa mengirimkan lampiran yang kontenya diambil dari URL atau base64, seper
 **Contoh 1 - Menggunakan URL:**
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -127,7 +128,7 @@ curl -X POST 'http://localhost:3000/send' \
 **Contoh 2 - Menggunakan URI Base64:**
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -154,7 +155,7 @@ Kamu juga bisa mengirimkan lampiran yang kontennya berupa *string*, *buffer*, at
 **Contoh:**
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
@@ -181,7 +182,7 @@ Jika kontennya diambil dari ***buffer*** atau ***stream*** maka, kamu bisa meluk
 Kamu juga bisa mengirim beberapa lampiran dengan cara menyusunnya ke dalam bentuk *array* seperti berikut ini.
 
 ```bash
-curl -X POST 'http://localhost:3000/send' \
+curl -X POST 'https://fimail.vercel.app/send' \
 -H 'Content-Type: application/json' \
 -d '{
     "from": {
