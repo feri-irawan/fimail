@@ -5,6 +5,9 @@ const fastify = require('fastify')
 // App
 const app = fastify({ logger: true })
 
+// Cors
+app.register(require('fastify-cors'))
+
 // Routes
 app.register(require('./routes'))
 
